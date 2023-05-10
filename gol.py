@@ -17,6 +17,7 @@ import matplotlib as mlb
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 import numpy as np
+import re
 import requests
 import sys
 
@@ -47,10 +48,7 @@ def update(_, img: mlb.image.AxesImage, grid: np.ndarray) -> mlb.image.AxesImage
     return img
 
 
-# asdf
-def main() -> None:
-    target_url = "https://conwaylife.com/patterns/31p3onmerzenichsp64.cells"
-
+def parser(target_url: str) -> np.ndarray:
     response = requests.get(target_url)
     data = response.text
     idx = min([data.find(i) for i in ["..", "O.", ".O", "OO"]])
@@ -59,22 +57,36 @@ def main() -> None:
     rows = len(new)
 
     binary = {".": 0, "O": 1}
-    mat = np.zeros((rows, cols))
+    grid = np.zeros((rows, cols))
     for i, j in enumerate(new):
-        mat[i] = [binary[k] for k in j]
+        grid[i] = [binary[k] for k in j]
 
-    grid = mat
-    # Generates the same random numbers for consistency
-    np.random.seed(0)
+    return grid
 
-    # Creates a matrix of size N-2xN-2 randomly filled with boolean values
-    # grid = np.random.randint(2, size=(N - 2, N - 2))
+
+# asdf
+def main() -> None:
+    if len(sys.argv) > 1:
+        cli_arg = sys.argv[1]
+    else:
+        cli_arg = "https://conwaylife.com/patterns/31p3onmerzenichsp64.cells"
+
+    match = re.match("^[0-9]+$", cli_arg)
+    if match:
+        N = int(match[0])
+        # Generates the same random numbers for consistency
+        np.random.seed(0)
+
+        # Creates a matrix of size N-2xN-2 randomly filled with boolean values
+        grid = np.random.randint(2, size=(N - 2, N - 2))
+    else:
+        grid = parser(cli_arg)
 
     # Avoid IndexError by zero-padding
-    grid = np.pad(grid, 10, mode="constant")
+    grid = np.pad(grid, 2, mode="constant")
 
     fig, ax = plt.subplots()
-    img = ax.imshow(grid, interpolation="lanczos", cmap="Greys")
+    img = ax.imshow(grid, interpolation="lanczos", cmap="inferno")
     _anim = FuncAnimation(
         fig,
         update,
