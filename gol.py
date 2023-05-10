@@ -75,9 +75,11 @@ def parser(target_url: str) -> np.ndarray:
 
 
 def main() -> None:
+    # If input is given
     if len(sys.argv) > 1:
         cli_arg = sys.argv[1]
     else:
+        # Default URL
         cli_arg = "https://conwaylife.com/patterns/31p3onmerzenichsp64.cells"
 
     # If input is integer, create a randomly populated numpy grid of input size
