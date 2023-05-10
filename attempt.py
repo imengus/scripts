@@ -21,17 +21,17 @@ import requests
 import sys
 
 
-def update(
-    _, img: mlb.image.AxesImage, grid: np.ndarray, N: int
-) -> mlb.image.AxesImage:
+def update(_, img: mlb.image.AxesImage, grid: np.ndarray) -> mlb.image.AxesImage:
     # Avoid interim changes that affect the outcome
     new_grid = grid.copy()
-
+    rows, cols = grid.shape
     # Apply rules to all cells expect those on the margins
-    for i in range(1, N - 1):
-        for j in range(1, N - 1):
+    for i in range(rows):
+        for j in range(cols):
+            xr = np.r_[i - 1 : i + 2] % rows
+            xc = np.r_[j - 1 : j + 2] % cols
             alive_neighbors = int(
-                np.sum(grid[i - 1 : i + 2, j - 1 : j + 2]) - grid[i][j]
+                np.sum(grid[np.ix_(xr, xc)]) - grid[i][j]
             )  # Sum of the 8 cells surrounding it
 
             # 3 alive neighbors cause dead cells to become alive
@@ -47,14 +47,13 @@ def update(
     return img
 
 
+# asdf
 def main() -> None:
-    N = int(sys.argv[1])
-
-    target_url = "https://conwaylife.com/patterns/p256glidergunwithboatbits.cells"
+    target_url = "https://conwaylife.com/patterns/31p3onmerzenichsp64.cells"
 
     response = requests.get(target_url)
     data = response.text
-    idx = data.find("..")
+    idx = min([data.find(i) for i in ["..", "O.", ".O", "OO"]])
     new = data[idx:].split()
     cols = len(new[0])
     rows = len(new)
@@ -65,7 +64,6 @@ def main() -> None:
         mat[i] = [binary[k] for k in j]
 
     grid = mat
-    N = mat.shape[0]
     # Generates the same random numbers for consistency
     np.random.seed(0)
 
@@ -73,20 +71,19 @@ def main() -> None:
     # grid = np.random.randint(2, size=(N - 2, N - 2))
 
     # Avoid IndexError by zero-padding
-    grid = np.pad(grid, 1, mode="constant")
+    grid = np.pad(grid, 10, mode="constant")
 
     fig, ax = plt.subplots()
-    img = ax.imshow(grid, interpolation="nearest", cmap="Greys")
+    img = ax.imshow(grid, interpolation="lanczos", cmap="Greys")
     _anim = FuncAnimation(
         fig,
         update,
         fargs=(
             img,
             grid,
-            N,
         ),
-        frames=10,
-        interval=30,
+        frames=20,
+        interval=1,
         save_count=50,
     )
 
