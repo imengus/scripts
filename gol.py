@@ -2,20 +2,22 @@
 
 For more information, see:
 https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
+https://conwaylife.com/wiki/
 
 Requirements:
   - numpy
   - matplotlib
 
 Usage:
-  - $python3 life <grid_size:int>
+  - $python3 gol.py <url:str>
+  - $python3 gol.py <grid_size:int>
 
  """
 
 
 import matplotlib as mlb
-import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
+import matplotlib.pyplot as plt
 import numpy as np
 import re
 import requests
@@ -26,9 +28,11 @@ def update(_, img: mlb.image.AxesImage, grid: np.ndarray) -> mlb.image.AxesImage
     # Avoid interim changes that affect the outcome
     new_grid = grid.copy()
     rows, cols = grid.shape
+
     # Apply rules to all cells expect those on the margins
     for i in range(rows):
         for j in range(cols):
+            # Indices wrap around
             xr = np.r_[i - 1 : i + 2] % rows
             xc = np.r_[j - 1 : j + 2] % cols
             alive_neighbors = int(
@@ -49,10 +53,16 @@ def update(_, img: mlb.image.AxesImage, grid: np.ndarray) -> mlb.image.AxesImage
 
 
 def parser(target_url: str) -> np.ndarray:
+    """
+    Get text file online via url. Parse into 2D np.ndarray
+    """
     response = requests.get(target_url)
     data = response.text
+
+    # Find where the data starts and get data
     idx = min([data.find(i) for i in ["..", "O.", ".O", "OO"]])
     new = data[idx:].split()
+
     cols = len(new[0])
     rows = len(new)
 
@@ -64,13 +74,13 @@ def parser(target_url: str) -> np.ndarray:
     return grid
 
 
-# asdf
 def main() -> None:
     if len(sys.argv) > 1:
         cli_arg = sys.argv[1]
     else:
         cli_arg = "https://conwaylife.com/patterns/31p3onmerzenichsp64.cells"
 
+    # If input is integer, create a randomly populated numpy grid of input size
     match = re.match("^[0-9]+$", cli_arg)
     if match:
         N = int(match[0])
@@ -79,6 +89,8 @@ def main() -> None:
 
         # Creates a matrix of size N-2xN-2 randomly filled with boolean values
         grid = np.random.randint(2, size=(N - 2, N - 2))
+
+    # Interpret it as a URL
     else:
         grid = parser(cli_arg)
 
