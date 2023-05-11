@@ -100,7 +100,7 @@ def main() -> None:
     grid = np.pad(grid, 2, mode="constant")
 
     fig, ax = plt.subplots()
-    img = ax.imshow(grid, interpolation="lanczos", cmap="inferno")
+    img = ax.imshow(grid, interpolation="lanczos", cmap="Greys")
     _anim = FuncAnimation(
         fig,
         update,
