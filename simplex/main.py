@@ -1,16 +1,20 @@
-import parse_str
+import tableau
 import input_gui
 
 
 def main():
-    input_str = r"""Min: +2 +3 +1
-    +1 +1 +1 <= 40
-    +2 +1 -1 >= 10
-    +0 -1 +1 >= 10
-    """
     input_str = input_gui.initial
-    t = parse_str.tabulate(input_str)
-    print(t.tableau)
+    constraints = input_str.strip().splitlines()
+    constraints, n_art_vars = tableau.preprocess(constraints)
+    t = tableau.Tab(constraints, n_art_vars)
+    t.create_tableau(constraints)
+    t.generate_col_titles()
+    t.delete_empty()
+    t.run_simp()
+    for num, stage in enumerate(t.previous):
+        print(num, ":")
+        print(stage)
+        print("----")
 
 
 if __name__ == "__main__":
