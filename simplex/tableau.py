@@ -40,19 +40,21 @@ def preprocess(constraints):
 class Tab:
     """Generate and operate on simplex tableaus"""
 
-    def __init__(self, constraints: str, n_art_vars: int):
+    def __init__(self, constraints=None, n_art_vars=None, tableau=None, col_titles=None):
+        self.col_titles = col_titles
+        self.tableau = tableau
+        if constraints is not None:
+            self.n_stages = (n_art_vars > 0) + 1
+            self.n_vars = len(constraints[0].split()) - 1
+            self.n_rows = len(constraints) + (n_art_vars > 0)
+            self.n_slack = len(constraints) - 1
+            self.n_art_vars = n_art_vars  # Number of artificial variables
+            self.n_cols = self.n_vars + self.n_rows + self.n_art_vars + 1
 
-        self.n_stages = (n_art_vars > 0) + 1
-        self.n_vars = len(constraints[0].split()) - 1
-        self.n_rows = len(constraints) + (n_art_vars > 0)
-        self.n_art_vars = n_art_vars  # Number of artificial variables
-        self.n_cols = self.n_vars + self.n_rows + self.n_art_vars + 1
-
-        self.tableau = np.zeros((self.n_rows - 1, self.n_cols))
-        self.col_titles = None
+            self.tableau = np.zeros((self.n_rows - 1, self.n_cols))
 
         # Previous states
-        self.previous = []
+        self.previous_states = []
 
         # Objectives for each state
         self.objectives = []
@@ -144,7 +146,7 @@ class Tab:
 
     def generate_col_titles(self):
         string_starts = ["x_", "s_", "a_"]
-        constants = self.n_vars, self.n_rows, self.n_art_vars
+        constants = self.n_vars, self.n_slack, self.n_art_vars
         col_titles = []
         for i in range(3):
             for j in range(constants[i]):
@@ -200,15 +202,18 @@ class Tab:
 
         self.n_stages = 1
         self.n_rows -= 1
+        self.n_art_vars = 0
 
     def run_simp(self):
         # Record current state
-        self.previous.append(self.tableau.copy())
+        self.generate_col_titles()
+        self.previous_states.append(Tab(tableau=self.tableau.copy(), col_titles=self.col_titles.copy()))
 
         # If optimal solution reached
         if not self.objectives:
-            tab = self.previous.copy()
+            tab = self.previous_states.copy()
             return
+
         self.find_pivot()
         if self.stop_iter:
             self.change_stage()
