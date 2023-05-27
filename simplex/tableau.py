@@ -40,7 +40,9 @@ def preprocess(constraints):
 class Tab:
     """Generate and operate on simplex tableaus"""
 
-    def __init__(self, constraints=None, n_art_vars=None, tableau=None, col_titles=None):
+    def __init__(
+        self, constraints=None, n_art_vars=None, tableau=None, col_titles=None
+    ):
         self.col_titles = col_titles
         self.tableau = tableau
         if constraints is not None:
@@ -100,7 +102,7 @@ class Tab:
             art_vars_left -= 1
 
         # Add variable entries
-        row[:self.n_vars] = np.array([coeff * int(x) for x in row_string[s]])
+        row[: self.n_vars] = np.array([coeff * int(x) for x in row_string[s]])
 
         # Add slack entry
         row[self.n_vars + row_num] = slack_val
@@ -178,7 +180,7 @@ class Tab:
     def pivot(self):
         piv_row = self.tableau[self.row_idx].copy()
         piv_val = piv_row[self.col_idx]
-        piv_row *= (1 / piv_val)
+        piv_row *= 1 / piv_val
 
         # Variable in pivot column becomes basic, ie the only non-zero entry
         for idx, coeff in enumerate(self.tableau[:, self.col_idx]):
@@ -192,7 +194,7 @@ class Tab:
         if not self.objectives:
             return
 
-        s = slice(-self.n_art_vars-1, -1)
+        s = slice(-self.n_art_vars - 1, -1)
 
         # Delete the artificial variable columns
         self.tableau = np.delete(self.tableau, s, axis=1)
@@ -207,11 +209,12 @@ class Tab:
     def run_simp(self):
         # Record current state
         self.generate_col_titles()
-        self.previous_states.append(Tab(tableau=self.tableau.copy(), col_titles=self.col_titles.copy()))
+        self.previous_states.append(
+            Tab(tableau=self.tableau.copy(), col_titles=self.col_titles.copy())
+        )
 
         # If optimal solution reached
         if not self.objectives:
-            tab = self.previous_states.copy()
             return
 
         self.find_pivot()

@@ -34,7 +34,8 @@ class Input(SetUp):
             height=1,
             width=10,
             text="Commit",
-            command=lambda: [self.retrieve_input(), root.quit()])
+            command=lambda: [self.retrieve_input(), root.quit()],
+        )
         self.button_commit.pack()
 
     def retrieve_input(self):
