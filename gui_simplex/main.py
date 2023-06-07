@@ -22,8 +22,5 @@ def main():
         out.mainloop()
 
 
-
-
-
 if __name__ == "__main__":
     main()
