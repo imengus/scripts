@@ -1,5 +1,7 @@
 # My favourite algorithms
 
 ### Contents:
-- Simplex algorithm: solves linear programs
-- Game of life: simulates Conway's cellular automata
+|Name | Function |
+| ----------------- |:-----------------------------------:|
+| Simplex algorithm | Solves max-/ minimisation problems with inequality constraints |
+| Game of life      | Simulates Conway's cellular automata |
