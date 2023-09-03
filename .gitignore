@@ -1,3 +1,3 @@
 __pychache__/
-.ruff_cache/
-gui_simplex/__pychache__/
+__pycache__/
+*.pyc
