@@ -6,7 +6,7 @@ from numba import njit
 def create_matrix(size=1000):
 
     def pixel_color(Px, Py, mult, sub, coeff=-1):
-        x0 = mult * Px - sub * 2.5
+        x0 = mult * 1.3 * Px - sub * 2.5
         y0 = mult * Py - sub
         x = y = it = 0
         max_iter = 20
@@ -26,8 +26,8 @@ def create_matrix(size=1000):
     return mat
 
 def plot_matrix():
-    mat = create_matrix(size=35000)
-    plt.imshow(mat, cmap="hot_r")
+    mat = create_matrix(size=4000)
+    plt.imshow(mat, cmap="hot")
     plt.axis('off')
     # plt.gca().set_aspect('equal')
     plt.show()
