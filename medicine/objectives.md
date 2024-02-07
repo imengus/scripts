@@ -1,0 +1,182 @@
+- [ ] define a carrier and a channel, and give examples. 
+- [ ] explain why most cells have a negative plasma membrane resting voltage 
+- [ ] predict what will happen to the resting voltage of a typical cell when the potassium concentration in the extracellular fluid rises (as happens, for instance during haemolysis and during kidney failure) 
+- [ ] define ionotropic cell surface receptor and give an example 
+- [ ] define metabotropic cell surface receptor and give an example
+- [ ] explain how oxygen binds to haemoglobin and the factors influencing oxygen affinity with haemoglobin 
+- [ ] describe the pathophysiology and clinical and laboratory features of sickle cell anaemia 
+- [ ] explain the pathophysiology of the thalassaemia syndromes.
+- [ ] explain how the pathophysiology of sickle and thalassaemia impacts on treatment strategies
+- [ ] describe the structure of haemoglobin
+- [ ] generation of action potentials and spontaneous heartbeat
+- [ ] propagation of action potentials
+- [ ] excitation- [ ]contraction coupling
+- [ ] pathophysiology of EC coupling
+- [ ] describe the general anatomy of the autonomic nervous system and differences between sympathetic, parasympathetic and somatic systems 
+- [ ] explain what is meant by the terms preganglionic and postganglionic in relation to the autonomic nervous system
+- [ ] state the similarities and differences between the neurotransmitters released by preganglionic and postganglionic sympathetic and parasympathetic neurones and the receptors activated 
+- [ ] state the hormones released by the adrenal medulla and locations and types of receptors activated by these circulating substances
+- [ ] describe in broad terms the influence of the parasympathetic and sympathetic innervations on heart, blood vessels and other target organs and the receptors activated 
+- [ ] provide an outline of autonomic nervous system’s role in cardiovascular control. 
+- [ ] provide an overview of ANS clinical pharmacology
+- [ ] describe what is meant by the term muscle
+- [ ] describe the basic histological appearance of skeletal muscle at the light microscope level
+- [ ] describe the detailed histological appearance of smooth and cardiac muscle at the light microscope level
+- [ ] identify and differentiate skeletal muscle, smooth muscle and cardiac muscle at a microscopic level
+- [ ] identify muscular tissue, and the type of muscle that it is in a section or in a light micrograph of compound tissue
+- [ ] identify smooth muscle and cardiac muscle cells, and identify their prominent ultrastructural components at the electron microscopic level
+- [ ] describe the histological structure of all major types of blood vessel
+- [ ] recognise blood vessels and their class, in sections or light micrographs of compound tissues
+ - [ ] Overview of adult human lung & lung development
+ - [ ] Mouse lung development – specific focus on branching and its regulation
+ - [ ] Studying lung development using human foetal tissue
+ - [ ] Similarities and differences between human and mouse lung development
+ - [ ] Studying human lung development using 3D organoids and iPS cells
+- [ ] know terms used for diseases at various levels of the respiratory tract
+- [ ] give examples of viruses associated with infection at particular levels of the tract
+- [ ] clin features and complications of C19 and influenza viruses 
+- [ ] antigenic shift + drift
+- [ ] thoracic cavity definition and boundaries
+- [ ] musculoskeletal components of thoracic cavity
+- [ ] innervation, blood supply and lymphatic drainage of thoracic cavity
+- [ ] mechanics of breathing
+- [ ] draw and label a diagram to show how the relationship between hydrostatic pressure, osmotic pressure and interstitial fluid pressure determine the balance of fluid between the capillary and the tissue
+- [ ] describe and explain what happens if the capillary wall becomes more permeable
+- [ ] describe and explain what happens if the blood pressure gradient across the capillary bed increases
+- [ ] describe the Starling hypothesis explaining the balance of forces acting across the capillary wall that determines production of interstitial fluid.
+- [ ] Describe the mechanisms of oedema formation
+- [ ] Understand the components of the respiratory tract defences
+- [ ] List the common respiratory bacterial pathogens and their relative incidence
+- [ ] List the risk factors for lower respiratory tract infections.
+- [ ] Understand basic methods for diagnosis of lower respiratory tract infections
+- [ ] Understand the principles of antibiotic treatment of lower respiratory tract infections. 
+- [ ] Outline the main methods for prevention of respiratory tract infections
+- [ ] Define & understand the differences between type 1 and type 2 respiratory failure 
+- [ ] Understand the concept of ventilation- [ ]perfusion matching and list some causes of V/Q mismatch 
+- [ ] Make a basic analysis / interpretation of arterial blood gas results
+- [ ] Recognise the uncompensated 4 problems pattern 
+- [ ] Know some causes of each 4 problems 
+- [ ] Known what compensation is 
+- [ ] Be able to work out a basic SBA
+- [ ] Boundaries of the thorax 
+- [ ] Surface anatomy of the thorax 
+- [ ] Listening for lung sounds 
+- [ ] Pulmonary cavities and pleura 
+- [ ] Diaphragm and diaphragmatic apertures 
+- [ ] Intercostal spaces- [ ] muscles, nerves, vessels 
+- [ ] Accessory muscles of respiration 
+- [ ] Rib Movements 
+- [ ] Breast anatomy and lymphatic drainage 
+- [ ] The mediastinal space and its divisions 
+- [ ] Contents of the mediastinum, neuromuscular supply, and lymphatic drainage 
+- [ ] Heart and great vessels in situ 
+- [ ] Lungs and lower airway(s) 
+- [ ] The root of the lung 
+- [ ] Basic thoracic radiology
+- [ ] Describe where and how ventilation is initiated
+- [ ] Describe the factors that influence ventilatory control 
+- [ ] Discuss the roles of CO2 and O2 in the control of breathing
+- [ ] State the relationship between airway resistance and airway radius
+- [ ] Explain how dynamic compression limits flow rate in forced expiration in healthy patients and normal expiration in COPD
+- [ ] Outline the physiological factors that determine airway resistance
+- [ ] Describe why compliance changes in lung diseases
+- [ ] Describe the relationship between lung compliance, airway resistance and work of breathing
+- [ ] Explain how lung volumes change in restrictive and obstructive diseases
+- [ ] Explain V/Q matching
+- [ ] Explain the difference between type 1 and type 2 respiratory failure
+- [ ] Global prevalence, asthma cases, asthma deaths 
+- [ ] Risk factors for developing asthma 
+- [ ] Social determinants of disease – deprivation and pollution
+- [ ] History and examination 
+- [ ] Peak flow 
+- [ ] Spirometry 
+- [ ] FeNO
+- [ ] Importance of airway inflammation 
+- [ ] Triggers 
+- [ ] Endotypes / phenotypes
+- [ ] Drug classes used and mechanisms 
+- [ ] Inhaled therapies 
+- [ ] Importance of inhaler technique and adherence & environmental impact of inhaler choices
+- [ ] Management of asthma exacerbations
+- [ ] draw and label two simple diagrams illustrating the blood supply of the heart
+- [ ] describe the origin of the right and left coronary arteries
+- [ ] describe the course, main branches and territories of the right coronary artery
+- [ ] describe the course, main branches and territories of the left coronary artery
+- [ ] be able to identify the coronary arteries and their branches on angiograms
+- [ ] describe the course of the coronary sinus and identify its opening in the right atrium 
+- [ ] understand the difference between the intrinsic conducting system and extrinsic innervation of the heart 
+- [ ] know the general anatomical position of the sinuatrial node, atrioventricular node 
+- [ ] describe the distribution of the right and left bundle branches 
+- [ ] describe the anatomy of the sympathetic chain
+- [ ] give an account of the phrenic and vagus nerves, thoracic duct and azygos veins
+- [ ] explain the origin of the heartbeat 
+- [ ] draw and label a diagram of the heart and locate the primary and secondary pacemakers of the heart 
+- [ ] explain how excitation spreads through the myocardium 
+- [ ] draw and label a diagram of the heart and locate the specialised conducting fibres of the heart 
+- [ ] describe the influence of the autonomic nervous system 
+- [ ] describe and explain the time- [ ]relationship between electrical excitation and muscle contraction 
+- [ ] draw and label an ECG obtained with standard limb leads 
+- [ ] describe in basic terms how, and which, electrical events of the heart give rise to electrical potentials on the skin which can be recorded as the electrocardiogram
+- [ ] define the terms: inotropic and chronotropic in relation to heart function
+- [ ] understand the way in which the immune response can damage the lungs
+- [ ] distinguish between the role of the innate immune response and the adaptive immune response 
+- [ ] and understand the 4 types of hypersensitivity reaction and give examples of each
+- [ ] describe, with the aid of a diagram, the pressure changes occurring in the heart and aorta during a cardiac cycle 
+- [ ] describe with the aid of a diagram the way the heart valves are controlled by pressure differences between the chambers of the heart, atria and ventricles, and the arteries, the aorta and pulmonary artery 
+- [ ] describe and explain the phases of the cardiac cycle and the events which delineate them explain what is meant by isovolumetric contraction and isovolumetric relaxation in relation to the cardiac cycle 
+- [ ] describe how the heart is filled with blood during the passive filling phase and the contribution of atrial contraction to cardiac filling describe how blood is pumped by the heart into the circulation 
+- [ ] show with the aid of a diagram the principle heart sounds and their associated events in the cardiac cycle 
+- [ ] describe common valvular abnormalities and their consequences
+- [ ] demonstrate an understanding of the relationship between pressure and flow in the circulation 
+- [ ] describe the organisation of the cardiovascular system with respect to the distribution of flows, pressures, velocities and volumes 
+- [ ] describe and explain the role of change in blood vessel radius in determining flow 
+- [ ] explain the concepts of resistance and compliance in relation to the circulation 
+- [ ] explain the conditions under which Poiseuille's law applies, and its application in considering the circulation of blood.
+- [ ] List key information gained from an ECG
+- [ ] list common indications for recording an ECG
+- [ ] gain familiarity with 12 lead
+- [ ] describe basic PQRST nomenclature and how it relates to anatomy
+- [ ] appreciate basic principles of ECG interpretation with examples
+- [ ] Understand nervous, humoral, and local control mechanisms acting on vascular smooth muscle to regulate resistance
+- [ ] Understand their physiological significance in controlling blood pressure and the distribution of blood flow
+- [ ] describe with the aid of a diagram the basic anatomy of a vascular bed 
+- [ ] describe with the aid of a diagram the components of a small vessel 
+- [ ] explain why arterioles are the main source of vascular resistance 
+- [ ] explain how blood flow through a vascular bed can be controlled by the regulation of vascular tone 
+- [ ] describe the innervation of blood vessels by autonomic nerves and how this regulates vascular tone and the distribution of blood flow 
+- [ ] name and describe the blood- [ ]borne (humoral) factors that influence vascular smooth muscle 
+- [ ] explain the concepts of laminar and turbulent flow, and shear stress 
+- [ ] describe how the endothelium can regulate vascular tone and its relationship with shear stress 
+- [ ] explain how an organ/tissue can influence its own blood flow and describe the local control mechanisms involved 
+- [ ] consider how individual control mechanisms can be manipulated to counteract vascular dysfunction 
+- [ ] consider the role of shear stress and the endothelium in vascular disease
+- [ ] Understand the various determinants of blood flow in coronary, cerebral, skeletal muscle and skin circulations
+- [ ] Know the difference between neurohumoral control, local metabolic control and autoregulation
+- [ ] Know how clinical pathology can influence these control mechanisms and lead to overt signs and symptoms of disease
+- [ ] understand key factors that determine cardiac output
+- [ ] explain how cardiac output can be changed
+- [ ] Understand the origins of cardiovascular disease (CVD), including the main lifestyle, genetic and environmental risk factors that predispose to it. 
+- [ ] Know the prevalence and severity (deaths) of CVD within the UK, Europe and the World. 
+- [ ] List the six main steps in the evolution of atherosclerosis. 
+- [ ] Describe the ‘Response- [ ]to- [ ]Injury’ pathway considered to drive atherogenesis. 
+- [ ] Recognize the roles that LDL and HDL have in plasma cholesterol transport and in atherosclerosis risk. 
+- [ ] Explain and describe the principal means of CVD prevention, including both lifestyle and pharmacological. 
+- [ ] Be aware of current developments in new drug targets and in gene- [ ]targeting therapeutics.
+- [ ] illustrate how our understanding of cardiac development constantly changing
+- [ ] examples which illustrate basis of heart development
+- [ ] consequences of abnormal heart development
+- [ ] What is blood pressure, hypertension?
+- [ ] Why hypertension bad?
+- [ ] How RAAS contributes to hypertension?
+- [ ] Commonly used therapies
+- [ ] how bp responds to haemorrhage
+- [ ] 5 key things that make the heart work normally 
+- [ ] 2 key equations and implications 
+- [ ] CO and SVR in ht failure 
+- [ ] Frank Starling Relationship (‘curves’) 
+- [ ] Fluid challenge: what happens 
+- [ ] 5 ways to measure cardiac output
+- [ ] ANS control of cardiovascular system
+- [ ] negative feedback control
+- [ ] arterial baroceptor reflex
+- [ ] reflex control of the circulation
