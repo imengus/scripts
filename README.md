@@ -5,6 +5,7 @@
 | --------------------------------- | ------------------------------------ | --------------------------------------- |
 | Progress visualiser (medicine/progress.sh) | ![](plots/progress.png) | Creates bar chart that shows content per lecture, and how much is ticked off |
 | Flashcard creator (medicine/file2fc.sh) | ![](plots/fc.png) | Transfers flashcards written with indentation in markdown to csv for Anki import |
+| Punctuation sounds (other/char2sound.py) | ![](plots/char2sound.jpeg) | Solves what a dot might sound like |
 | Tricorn Fractal <br> (other/tricorn.py)   | ![](plots/tricorn.png)               | Conjugate set to the Mandelbrot        |
 | Game of life <br> (other/gol.py)          | ![](plots/gol.png)                   | Simulates Conway's cellular automata    |
 | Barnsley's fern <br> (other/barnsley_fern.py) | ![](plots/barnsley.jpg)              | Recreates the eponymous fractal        |
